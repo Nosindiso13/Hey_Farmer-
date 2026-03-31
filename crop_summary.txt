@@ -1,0 +1,7 @@
+                             CV R² Test R² RMSE (log) MAE (hg/ha)
+Model                                                            
+Random Forest      0.8714 ± 0.0373  0.9296     0.2756       5,526
+Gradient Boosting  0.8627 ± 0.0472  0.9491     0.2343       5,593
+Ridge Regression   0.7968 ± 0.0509  0.8411     0.4140      10,061
+KNN Regressor      0.7911 ± 0.0820  0.7704     0.4976      10,650
+XGBoost            0.8690 ± 0.0506  0.9501     0.2319       5,557
