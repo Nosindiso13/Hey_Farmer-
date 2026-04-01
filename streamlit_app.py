@@ -46,7 +46,7 @@ def detect_pest_mock(image_bytes: bytes) -> list[dict]:
 yield_pipeline, pest_model, gemini_model = load_models()
 
 st.set_page_config(page_title='Farmer Advisor & Market', layout='wide')
-st.title('🌾 Crop Advisor & Marketplace')
+st.title('AI Crop Advisory System for Farmers')
 
 tabs = st.tabs(['📈 Yield Prediction', '🪲 Pest Detection', '🤖 AI Advisor', '🛒 Market & Trends'])
 
@@ -113,4 +113,4 @@ with tabs[3]:
             quantity = st.number_input('Quantity (kg)', min_value=1)
             price = st.number_input('Asking Price ($)', min_value=1)
             if st.form_submit_button('Post Listing'):
-                st.success(f'Listing created for {seller_name}! {crop_type}.')
+                st.success(f'Listing created for {seller_name}')
