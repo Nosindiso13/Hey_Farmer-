@@ -46,7 +46,7 @@ def detect_pest_mock(image_bytes: bytes) -> list[dict]:
 yield_pipeline, pest_model, gemini_model = load_models()
 
 st.set_page_config(page_title='Farmer Advisor & Market', layout='wide')
-st.title('AI Crop Advisory System for Farmers')
+st.title('AI Crop Advisory System!')
 
 tabs = st.tabs(['📈 Yield Prediction', '🪲 Pest Detection', '🤖 AI Advisor', '🛒 Market & Trends'])
 
