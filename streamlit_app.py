@@ -6,6 +6,7 @@ import os
 import io
 from PIL import Image
 import asyncio
+import google.colab
 
 # Imports for Gemini API
 import google.generativeai as genai
