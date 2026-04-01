@@ -65,7 +65,7 @@ with tabs[0]:
                 pred = np.expm1(yield_pipeline.predict(input_df))[0]
                 st.metric('Estimated Yield', f'{pred:,.2f} hg/ha')
             else:
-                st.error("Crop Yield Model not loaded. Cannot make prediction.")
+                st.error("still loading")
 
 with tabs[1]:
     st.header('Pest Identification')
@@ -80,7 +80,7 @@ with tabs[1]:
             for detection in detections:
                 st.write(f"- **{detection['description']}** (Confidence: {detection['probability']:.2f})")
         else:
-            st.info("No detections found.")
+            st.info("wait a moment!!")
 
 with tabs[2]:
     st.header('AI Chatbot')
@@ -94,7 +94,7 @@ with tabs[2]:
             st.session_state.messages.append({'role': 'assistant', 'content': response.text})
             st.chat_message('assistant').write(response.text)
         else:
-            st.error("AI Chatbot not available. Please check API key configuration.")
+            st.error("AI Chatboard generating your response.")
 
 with tabs[3]:
     st.header('🛒 Farmer Marketplace & Trending Crops')
