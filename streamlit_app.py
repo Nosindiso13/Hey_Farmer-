@@ -27,7 +27,7 @@ def load_models():
     pest_model = None # No actual model needed for mock detection
     api_key = os.getenv('yield_key')
     if not api_key:
-        st.error("Google API Key (yield_key) not found. Please set it as an environment variable.")
+        
         return yield_model, pest_model, None
     genai.configure(api_key=api_key)
     gemini = genai.GenerativeModel('gemini-pro')
