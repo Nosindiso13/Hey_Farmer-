@@ -4,6 +4,5 @@ numpy
 joblib
 scikit-learn
 xgboost
-tensorflow-cpu
 Pillow
 google-generativeai
